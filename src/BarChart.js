@@ -11,7 +11,7 @@ const BarChart = () => {
     labels: ['Amazon', 'Facebook', 'Netflix', 'Google'],
     datasets: [{
       label: 'Stock Prices (USD)',
-      data: [189.05, 523.16, 628.78, 160.79], // Removed extra data points
+      data: [189.05, 523.16, 628.78, 160.79],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
@@ -37,7 +37,7 @@ const BarChart = () => {
   };
 
   return (
-    <div style = {{ width: '50%' , float: 'right', margin: '0 auto', flexDirection: 'row', marginTop: 250}}>
+    <div style={{ position: 'absolute', bottom: 0, right: 0, width: '50%', height: '50%', marginBottom: 200 }}>
       <Bar data={data} options={options} />
     </div>
   );
