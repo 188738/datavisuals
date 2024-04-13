@@ -5,7 +5,7 @@ import Home from './Home'; // Assuming Home.js is in the same src folder as App.
 function App() {
   return (
     <div className="App">
-      <BarChart/>
+      <Graphs />
     </div>
   );
 }
