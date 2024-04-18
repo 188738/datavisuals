@@ -24,7 +24,7 @@ const Graphs = () => {
 
     return (
         <div>
-<h1 style={{ textAlign: 'center' }}>Graphs</h1>            <div style={{ position: 'absolute', bottom: 50, left: 0, width: '30%', height: '50%', marginLeft: 650, marginBottom: 400}}>
+        <div style={{ position: 'absolute', bottom: 50, left: 0, width: '30%', height: '50%', marginLeft: 650, marginBottom: 400}}>
                 <div style={{ flex: 1 }}>
                     <h2>Facebook</h2>
                     <Line data={data1} />

@@ -1,12 +1,21 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import BarChart from './BarChart'; // Assuming BarChart.js is in the same src folder as App.js
-import Graphs from './Graphs'; // Assuming Graphs.js is in the same src folder as App.js
-import Home from './Home'; // Assuming Home.js is in the same src folder as App.js
+import BarChart from './BarChart';
+import Graphs from './Graphs';
+import Home from './Home';
+
 function App() {
   return (
-    <div className="App">
-      <Graphs />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+        <Route path="/" element={<Home netWorth={400000} />} />  // Set Home as the default component
+          <Route path="/barchart" element={<BarChart />} />  // Route for BarChart
+          <Route path="/graphs" element={<Graphs />} />  // Route for Graphs
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
