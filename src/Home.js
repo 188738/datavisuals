@@ -5,7 +5,7 @@ import PieChart from './PieChart';
 
 const Home = ({ netWorth }) => {
     return (
-        <div style={{ textAlign: 'center', width: '100%', height: '100%', marginBottom: 100, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ textAlign: 'center', width: '100%', height: '200%', marginBottom: 800, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <h1 style={{ textAlign: 'center' }}>Your net worth: ${netWorth.toLocaleString()}</h1>
             <br />
             <Link to="/barchart">
@@ -16,17 +16,7 @@ const Home = ({ netWorth }) => {
                 <h3>Want to see the growth of your stocks?</h3>
             </Link>
 
-            <div style={{ marginTop: 150, flex: 1, bottom: 0 }}> {/* Add margin to the top of the PieChart */}
-            <br>
-            
-            
-            
-            
-            
-            </br>
-            <br>
-            
-             </br>
+            <div style={{ marginTop: 900, flex: 1, bottom: 0 }}> {/* Adjusted marginTop */}
                 <PieChart />
             </div>
         </div>
